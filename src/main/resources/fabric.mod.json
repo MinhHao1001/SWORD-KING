@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "kingsword",
+  "version": "1.0.0",
+  "name": "King Sword Mod",
+  "description": "Mod thêm Kiếm Vua với kỹ năng dọng đất hất tung diện rộng.",
+  "authors": ["Minh Hạo"],
+  "contact": {},
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.example.kingsword.KingSwordMod"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.2",
+    "java": ">=21"
+  }
+}
