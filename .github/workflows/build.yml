@@ -21,12 +21,10 @@ jobs:
 
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v3
-
-      - name: Build with Gradle
-        run: gradle build --no-daemon
-
-      - name: Upload Mod Artifact
-        uses: actions/upload-artifact@v4
         with:
-          name: KingSwordMod-Jar
-          path: build/libs/*.jar
+          gradle-version: wrapper
+
+      - name: Build Project
+        run: gradle build --no-daemon
+        env:
+          org.gradle.jvmargs: -Xmx2G
